@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>JIIcons</title>
+    <link rel="stylesheet" href="doc.css">
+    <link rel="stylesheet" href="jiicons.css">
+    <script src="init.js"></script>
+    <style>
+      .search {
+        display: flex;
+        align-items: center;
+        margin-bottom: 1rem;
+      }
+
+      .search input[type="text"] {
+        flex: 1;
+        padding: 0.5rem;
+        border-radius: 0.25rem;
+        border: 1px solid gray;
+        font-size: 1.2rem;
+        outline: none;
+        min-width: 0;
+      }
+
+      .search input[type="text"]:focus-visible {
+        border: 2px solid #29b6f6;
+      }
+
+      .search button {
+        margin-left: 1rem;
+        background-color: #0074d9;
+        color: #fff;
+        padding: 0.5rem 1rem;
+        border-radius: 0.25rem;
+        border: none;
+        font-size: 1.2rem;
+        cursor: pointer;
+      }
+
+      .icon-list {
+        display: flex;
+        flex-wrap: wrap;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+
+      .icon-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 96px;
+        height: 96px;
+        /* margin: 1rem; */
+        background-color: #fff;
+        /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+        border-radius: 5px;
+        border: 1px solid #FFF;
+        padding: 10px 10px;
+        transition: all 0.2s ease-in-out;
+      }
+
+      .icon-item:hover {
+        /* transform: scale(1.1); */
+        border: 1px solid #BBB;
+        /* box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); */
+        cursor: pointer;
+      }
+
+      .icon-item i {
+        font-size: 2rem;
+        line-height: 2rem;
+        /* color: #0074d9; */
+      }
+
+      .icon-item span {
+        margin-top: 0.5rem;
+        font-size: 0.9rem;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body onload="bodyLoad()">
+  <!--
+    <header>Some hint block like: App installation guide</header>
+  -->
+    <nav>
+      <ul class="left" onclick="location.href = 'index.html';">
+        <li><i class="ji-icon ji-jii-logo" style="line-height: 53px; font-size: 2em;"></i> &nbsp;</li>
+        <li><h1>JIIcons</h1></li>
+      </ul>
+      <div class="right-toggle">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" style="width: 32px; height: 32px;">
+          <path fill="currentColor" d="M24 120h400a24 24 0 0 0 0-48H24a24 24 0 0 0 0 48zm0 136h400a24 24 0 0 0 0-48H24a24 24 0 0 0 0 48zm0 136h400a24 24 0 0 0 0-48H24a24 24 0 0 0 0 48z"/>
+        </svg>        
+      </div>
+      <ul class="right">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="start.html">Get Started</a></li>
+        <li><a href="icons.html" class="active">Icons</a></li>
+        <li><a href="example.html">Examples</a></li>
+        <li><a href="license.html">License</a></li>
+      </ul>
+    </nav>
+    <div class="hero" style="padding-top: 20px; padding-bottom: 20px;">
+      <div style="text-align: left;">
+        <h2>ICONS</h2>
+        <p style="text-align: left; font-size: 14pt;">
+          The complete set of icons in JIIcons.
+        </p>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="search">
+        <input type="text" placeholder="Search icons...">
+        <button>Search</button>
+      </div>
+      <ul class="icon-list">
+        <li class="icon-item">
+          <i class="ji-icon ji-jii-logo"></i>
+          <span>jii-logo</span>
+        </li>
+        <li class="icon-item">
+          <i class="ji-icon ji-select-text"></i>
+          <span>select-text</span>
+        </li>
+        <!-- Add more icons here -->
+      </ul>
+    </div>
+
+    <footer>
+      <div class="footer-container">
+        <div class="">
+          <span style="display: inline-flex;">
+            <i class="ji-icon ji-jii-logo" style="font-size: 16pt;"></i> &nbsp;
+            <h3 style="margin: 0;">JIIcons</h3>
+          </span>
+          <p>Enhance your UI with elegant, lightweight icons.</p>
+          <p>© 2023 JIIcons, All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
