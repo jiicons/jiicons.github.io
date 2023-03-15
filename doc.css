@@ -41,8 +41,13 @@ nav {
 nav ul {
   display: flex;
   margin: 0;
-  padding: 0 100px;
   justify-content: flex-start;
+}
+nav ul.left {
+  padding: 0 100px;
+}
+nav ul.right {
+  padding-right: 100px;
 }
 
 nav .right-toggle {
@@ -103,23 +108,23 @@ nav ul.right li a:active {
     background-color: #fff;
     box-shadow: 0px 1px 3px rgb(0 0 0 / 12%);
   }
-  
+
   nav .right-toggle {
     display: block;
     cursor: pointer;
     padding: 15px;
     font-size: 1.5em;
   }
-  
+
   nav .right-toggle i {
     color: #5f6368;
   }
-  
+
   nav ul.right li {
     margin: 0;
     padding: 10px 20px;
     border-bottom: 1px solid #f1f3f4;
-  } 
+  }
 }
 
 /* hero block */
@@ -136,6 +141,18 @@ nav ul.right li a:active {
   margin-top: 40px;
 }
 
+.hero .btn-group {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.hero .btn-group .btn {
+  flex-shrink: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
 @media only screen and (max-width: 768px) {
   .hero {
     padding: 20px;
@@ -149,6 +166,9 @@ nav ul.right li a:active {
     line-height: 1;
     margin-top: 24px !important;
     margin-bottom: 24px !important;
+  }
+  .hero .btn-group .btn {
+    width: 70%;
   }
   section {
     padding: 20px;
@@ -226,6 +246,7 @@ footer {
   font-size: 14px;
   color: #666;
   margin-top: 20px;;
+  padding: 10px 100px;
 }
 
 .footer-container {
@@ -234,12 +255,14 @@ footer {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  padding-left: 100px;
+}
+.footer-container p {
+  margin: 5px auto;
 }
 
 @media only screen and (max-width: 768px) {
-  .footer-container {
-    padding-left: 0;
+  footer {
+    padding-left: 20px;
   }
 }
 
@@ -297,10 +320,11 @@ code {
   position: relative;
   display: flex;
   flex-direction: column;
-  max-width: 800px;
+  width: 100%;
   min-height: 200px;
-  margin: 0 auto;
-  padding: 2rem;
+  /* margin: 0 auto; */
+  padding: 20px 100px;
+  box-sizing: border-box;
 }
 
 @media only screen and (max-width: 768px) {
