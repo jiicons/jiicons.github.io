@@ -170,6 +170,8 @@ nav ul.right li a:active {
   }
   .hero .btn-group .btn {
     width: 70%;
+    padding-top: 15px !important;
+    padding-bottom: 15px !important;
   }
   section {
     padding: 20px;
