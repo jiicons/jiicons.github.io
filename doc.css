@@ -206,6 +206,7 @@ nav ul.right li a:active {
   color: #fff;
 }
 
+.btn-outline.active,
 .btn-outline:hover {
   /* border-color: #FFF;
   background-color: #FFF;
