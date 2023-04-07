@@ -18,14 +18,18 @@
 	/* speak: none; only necessary if not using the private unicode range (firstGlyph option) */
 	text-decoration: none;
 	text-transform: none;
-  content: "\E001";
+  content: "\E002";
 }
 
 
-.ji-jii-logo:before {
+.ji-bot:before {
 	content: "\E001";
 }
 
-.ji-select-text:before {
+.ji-jii-logo:before {
 	content: "\E002";
+}
+
+.ji-select-text:before {
+	content: "\E003";
 }
