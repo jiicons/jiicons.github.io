@@ -30,6 +30,10 @@
 	content: "\E002";
 }
 
-.ji-select-text:before {
+.ji-minimize:before {
 	content: "\E003";
+}
+
+.ji-select-text:before {
+	content: "\E004";
 }
