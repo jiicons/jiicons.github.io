@@ -104,6 +104,33 @@
         -webkit-box-orient: vertical;
       }
     </style>
+    <script>
+      const icons = [
+        "jii-logo",
+        "select-text",
+        "bot",
+        "minimize",
+        "up-right-arrow-in-square",
+        "down-right-arrow-in-square",
+        "down-left-arrow-in-square",
+        "up-left-arrow-in-square"
+      ];
+      function bodyLoad() {
+        const iconList = document.querySelector(".icon-list");
+        icons.forEach(icon => {
+          const li = document.createElement("li");
+          li.classList.add("icon-item");
+          li.setAttribute("title", icon);
+          const i = document.createElement("i");
+          i.classList.add("ji-icon");
+          i.classList.add(`ji-${icon}`);
+          const span = document.createElement("span");
+          span.textContent = icon;
+          li.append(i, span);
+          iconList.appendChild(li);
+        })
+      }
+    </script>
   </head>
   <body onload="bodyLoad()">
   <!--
@@ -142,38 +169,6 @@
         <button>Search</button>
       </div>
       <ul class="icon-list">
-        <li class="icon-item">
-          <i class="ji-icon ji-jii-logo"></i>
-          <span>jii-logo</span>
-        </li>
-        <li class="icon-item">
-          <i class="ji-icon ji-select-text"></i>
-          <span>select-text</span>
-        </li>
-        <li class="icon-item">
-          <i class="ji-icon ji-bot"></i>
-          <span>bot</span>
-        </li>
-        <li class="icon-item">
-          <i class="ji-icon ji-minimize"></i>
-          <span>minimize</span>
-        </li>
-        <li class="icon-item">
-          <i class="ji-icon ji-up-right-arrow-in-square"></i>
-          <span>up-right-arrow-in-square</span>
-        </li>
-        <li class="icon-item" title="down-right-arrow-in-square">
-          <i class="ji-icon ji-down-right-arrow-in-square"></i>
-          <span>down-right-arrow-in-square</span>
-        </li>
-        <li class="icon-item">
-          <i class="ji-icon ji-down-left-arrow-in-square"></i>
-          <span>down-left-arrow-in-square</span>
-        </li>
-        <li class="icon-item">
-          <i class="ji-icon ji-up-left-arrow-in-square"></i>
-          <span>up-left-arrow-in-square</span>
-        </li>
         <!-- Add more icons here -->
       </ul>
     </div>
