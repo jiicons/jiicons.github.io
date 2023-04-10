@@ -18,22 +18,38 @@
 	/* speak: none; only necessary if not using the private unicode range (firstGlyph option) */
 	text-decoration: none;
 	text-transform: none;
-  content: "\E002";
+  content: "\E001";
 }
 
 
-.ji-bot:before {
+.ji-jii-logo:before {
 	content: "\E001";
 }
 
-.ji-jii-logo:before {
+.ji-select-text:before {
 	content: "\E002";
 }
 
-.ji-minimize:before {
+.ji-bot:before {
 	content: "\E003";
 }
 
-.ji-select-text:before {
+.ji-minimize:before {
 	content: "\E004";
+}
+
+.ji-up-right-arrow-in-square:before {
+	content: "\E005";
+}
+
+.ji-down-right-arrow-in-square:before {
+	content: "\E006";
+}
+
+.ji-down-left-arrow-in-square:before {
+	content: "\E007";
+}
+
+.ji-up-left-arrow-in-square:before {
+	content: "\E008";
 }
