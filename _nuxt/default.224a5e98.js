@@ -1,1 +1,0 @@
-import{a as s,b as a,h as t,j as o,o as n}from"./entry.81fa8776.js";const u=s({__name:"default",setup(r){return a({titleTemplate:e=>e?`${e} | JIIcons`:"JIIcons"}),(e,l)=>(n(),t("div",null,[o(e.$slots,"navgator"),o(e.$slots,"default"),o(e.$slots,"footer")]))}});export{u as default};
